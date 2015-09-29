@@ -1,0 +1,2 @@
+# alfredworkflows
+alfred-workflows
