@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.devoll.alfredapp.prl</string>
+	<key>connections</key>
+	<dict>
+		<key>6C68D0BB-A89A-4FDD-BB99-B5A5B460646E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9F5D0E5-ADFD-48F0-B16F-C61779B1FB4E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Pavel Nikitaev</string>
+	<key>description</key>
+	<string>Simple parallels control workflow</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Parallels control</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>126</integer>
+				<key>script</key>
+				<string>/usr/bin/osascript -l JavaScript ./vm_toggle.scpt "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D9F5D0E5-ADFD-48F0-B16F-C61779B1FB4E</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>prl</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading VM list</string>
+				<key>script</key>
+				<string>/usr/bin/osascript -l JavaScript ./vm_list.scpt</string>
+				<key>subtext</key>
+				<string>Parallels Virtual Machines</string>
+				<key>title</key>
+				<string>Parallels</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>6C68D0BB-A89A-4FDD-BB99-B5A5B460646E</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>6C68D0BB-A89A-4FDD-BB99-B5A5B460646E</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>D9F5D0E5-ADFD-48F0-B16F-C61779B1FB4E</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
